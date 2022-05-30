@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "HookVersion",
+    "author": "Ily1606",
+    "description": "A tool for zalo dark mode.",
+    "version": "0.1",
+    "icons": {
+        "16": "/icon/UKN.png",
+        "32": "/icon/UKN.png",
+        "48": "/icon/UKN.png",
+        "128": "/icon/UKN.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://chat.zalo.me/*"],
+          "css": ["/assets/css/zalo.css"],
+          "js": ["/js/content.js"]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "/js/background.js"
+    },
+    "action": {}
+}

@@ -1,0 +1,23 @@
+:root {
+  --slidebar-width: 300px;
+}
+.slidebar {
+  width: var(--slidebar-width);
+  padding: 20px 30px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  .header-slidebar {
+    margin-bottom: 20px;
+  }
+  .slidebar-content {
+    height: 100%;
+    // overflow: auto;
+  }
+}
+.main-content {
+  margin-top: 20px;
+  margin-left: var(--slidebar-width);
+  margin-right: 30px;
+}
